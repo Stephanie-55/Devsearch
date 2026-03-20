@@ -1,4 +1,4 @@
-# EVSearch Documentation
+# DEVSearch Documentation
 
 > Version 1.0 · Last updated March 2026
 

@@ -57,7 +57,7 @@ evsearch/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -105,11 +105,11 @@ Navigate to:
 http://127.0.0.1:8000/frontend/index.html
 ```
 
-> ⚠️ Do **not** open `index.html` by double-clicking the file. It must be served via `http://` to allow ES module imports.
+>  Do **not** open `index.html` by double-clicking the file. It must be served via `http://` to allow ES module imports.
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 The platform uses **JWT Bearer Tokens** for stateless, secure authentication.
 
@@ -121,7 +121,7 @@ The platform uses **JWT Bearer Tokens** for stateless, secure authentication.
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 cd Backend
@@ -136,7 +136,7 @@ The test suite validates:
 
 ---
 
-## 📦 Key Dependencies
+##  Key Dependencies
 
 | Package | Purpose |
 |---|---|
@@ -153,7 +153,7 @@ The test suite validates:
 
 ---
 
-## 🔒 Security Notes
+##  Security Notes
 
 - All API routes (except `/auth/register` and `/auth/token`) require a valid JWT.
 - Passwords are hashed with `bcrypt` before storage; plaintext passwords are never persisted.
