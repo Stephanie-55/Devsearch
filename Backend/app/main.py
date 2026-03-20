@@ -12,7 +12,7 @@ from app.api.routes.compare import router as compare_router
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 
-app = FastAPI(title="DevSearch")
+app = FastAPI(title="DEVSearch")
 
 app.add_middleware(
     CORSMiddleware,

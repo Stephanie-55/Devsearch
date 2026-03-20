@@ -24,7 +24,7 @@
 
 ## 1. Introduction
 
-EVSearch is an AI-powered semantic document search platform that enables users to upload, index, and query documents using natural language. The system transforms unstructured documents into searchable vector embeddings and retrieves relevant passages ranked by semantic similarity.
+DEVSearch is an AI-powered semantic document search platform that enables users to upload, index, and query documents using natural language. The system transforms unstructured documents into searchable vector embeddings and retrieves relevant passages ranked by semantic similarity.
 
 ### Core Capabilities
 
@@ -468,7 +468,7 @@ flowchart TD
 
 ## 5. Authentication
 
-EVSearch uses stateless JWT Bearer Token authentication. All endpoints except `/auth/register` and `/auth/token` require a valid token.
+DEVSearch uses stateless JWT Bearer Token authentication. All endpoints except `/auth/register` and `/auth/token` require a valid token.
 
 ### Authentication Flow
 
