@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSearch AI</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css?v=4">
+</head>
+
+<body>
+
+<!-- Auth Screen -->
+<div id="authScreen" class="auth-wrapper">
+    <div class="auth-card">
+        <h2 style="color: var(--text); font-weight: 600; font-size: 24px;">Welcome to DevSearch</h2>
+        <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 25px;">Sign in to your private FAISS workspace</p>
+        
+        <input type="text" id="authUsername" placeholder="Username" class="auth-input">
+        <input type="password" id="authPassword" placeholder="Password" class="auth-input">
+        
+        <button id="authLoginBtn" class="auth-btn" style="margin-bottom: 10px;">Login</button>
+        <button id="authRegisterBtn" class="auth-btn auth-btn-outline">Register</button>
+        
+        <p id="authErrorMsg" style="color: var(--danger); font-size: 13px; margin-top: 15px; text-align: center;"></p>
+    </div>
+</div>
+
+<div class="app hidden" id="mainApp">
+
+    <div class="sidebar">
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+            <h2>DevSearch</h2>
+            <button id="logoutBtn" style="background: none; border: none; font-size: 13px; color: var(--text-muted); cursor: pointer; text-decoration: underline;">Logout</button>
+        </div>
+
+        <button id="uploadBtn">Upload Document</button>
+        <input type="file" id="fileInput" hidden multiple>
+        
+        <button id="addUrlBtn" style="background: rgba(255,255,255,0.05); margin-top: 10px;">Scrape Web URL</button>
+
+        <div class="sidebar-section">
+            <div class="section-header" id="docsHeader" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                <h3>Documents</h3>
+                <span id="docsToggleIcon" style="color: var(--text-muted); font-size: 14px; font-weight: 800;">▼</span>
+            </div>
+            <div id="docsContainer" style="margin-top: 8px;">
+                <input type="text" id="docsSearchInput" placeholder="Filter documents..." style="margin-bottom: 10px; padding: 8px 12px; font-size: 13px;">
+                <ul id="documentsList"></ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Compare</h3>
+
+        <select id="doc1"></select>
+        <select id="doc2"></select>
+
+        <button id="compareBtn">Compare</button>
+
+        <div id="compareResult"></div>
+
+    </div>
+
+
+    <div class="main">
+
+        <div class="searchBox">
+
+            <input
+                id="searchInput"
+                placeholder="Ask DevSearch anything..."
+            >
+
+            <button id="searchBtn">Search</button>
+
+        </div>
+
+        <div id="results"></div>
+
+        <iframe id="viewer"></iframe>
+
+    </div>
+
+</div>
+
+<script type="module" src="app.js?v=8"></script>
+
+</body>
+</html>
